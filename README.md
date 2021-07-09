@@ -82,9 +82,9 @@ DATA INSERTION OF SUPPLIER_DETAILS
 ===================================
 
 ``INSERT INTO SUPPLIER_DETAILS (PRODUCT_ID, SUPPLIER_ID, SUPPLIER_NAME, SUPPLIER_COMPANY, SUPPLIER_CITY, SUPPLIER_AREA, SUPPLIER_EMAIL, SUPPLIER_PH_NO)
-VALUES (12345, 001, 'Venkat', 'SAP', 'Chennai', 'Ambattur', 'venkatrmns@gmail.com', 3457823456);
+VALUES (12345, 001, 'Venkat', 'SAP', 'Chennai', 'Ambattur', 'venkatrmns@gmail.com', 3457823456);``
 
-INSERT ALL
+``INSERT ALL
 INTO SUPPLIER_DETAILS VALUES (12346, 002, 'Saran', 'Parle', 'Coimbatore', 'MKV', 'saranravi@gmail.com', 8785643290)
 INTO SUPPLIER_DETAILS VALUES (12347, 003, 'Sanjeev', 'Vimco', 'Bangalore', 'tend_IT_park', 'sanjeevprasad@gmail.com', 7384562918)
 INTO SUPPLIER_DETAILS VALUES(12348, 004, 'Poornima', 'Plintron', 'Kochin', 'Kaloor', 'dpoorni.d@gmail.com', 9873452613)
