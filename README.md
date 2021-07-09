@@ -1,11 +1,11 @@
-PROJECT FEATURES
+#PROJECT FEATURES
 ================
 
-PROJECT TITLE : STOCK MANAGEMENT APP
+##PROJECT TITLE : STOCK MANAGEMENT APP
 ========================================
-STOCK_DETAILS TABLE
+###STOCK_DETAILS TABLE
 =====================
-``CREATE TABLE STOCK_DETAILS                          
+``sql CREATE TABLE STOCK_DETAILS                          
 (
 PRODUCT_ID NUMBER,
 PRODUCT_NAME VARCHAR(30),
