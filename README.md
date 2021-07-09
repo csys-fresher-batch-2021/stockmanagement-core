@@ -1,4 +1,5 @@
-#PROJECT FEATURES
+PROJECT FEATURES
+================
 
 PROJECT TITLE : STOCK MANAGEMENT APP
 ========================================
