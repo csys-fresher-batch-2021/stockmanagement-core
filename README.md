@@ -1,18 +1,20 @@
-#PROJECT FEATURES
-================
+ # PROJECT FEATURES
+   ============
 
-##PROJECT TITLE : STOCK MANAGEMENT APP
-========================================
-###STOCK_DETAILS TABLE
-=====================
-``sql CREATE TABLE STOCK_DETAILS                          
+## PROJECT TITLE : STOCK MANAGEMENT APP
+   =====================================
+### STOCK_DETAILS TABLE
+    ===================
+```sql 
+CREATE TABLE STOCK_DETAILS                          
 (
 PRODUCT_ID NUMBER,
 PRODUCT_NAME VARCHAR(30),
 ORDERED_DAY DATE,
 PRODUCT_QUANTITY NUMBER,
 CONSTRAINTS STK_1 PRIMARY KEY(PRODUCT_ID)
-);``
+);
+```
 
 DATA INSERTION OF STOCKS
 
