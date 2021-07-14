@@ -1,6 +1,10 @@
+<<<<<<< HEAD
  # PROJECT FEATUREs
+=======
+ # PROJECT FEATURE
+>>>>>>> branch 'main' of https://github.com/csys-fresher-batch-2021/stockmanagement-core.git
    
-## PROJECT TITLE : STOCK MANAGEMENT APPLICATION
+## PROJECT TITLE : STOCK MANAGEMENT APPLICATION 
    
 ### STOCK_DETAILS TABLE
     
