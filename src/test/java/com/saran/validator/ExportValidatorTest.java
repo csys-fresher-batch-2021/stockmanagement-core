@@ -50,6 +50,6 @@ public class ExportValidatorTest {
 	public static void main(String[] args) {
 	//testcase1(); //valid productid,exportid,ExportDestination
 	testcase2(); // invalid productid,exportid and valid ExportDestination
-	testcase3(); // valid productid,exportid and invalid ExportDestination
+	//testcase3(); // valid productid,exportid and invalid ExportDestination
 }
 }
