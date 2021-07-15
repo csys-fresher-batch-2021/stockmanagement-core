@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import com.saran.model.Tracking;
 
-public class TrackingvalidatorTest {
+public class TrackingValidatortest {
 	
 /**
  * developed by saran
@@ -56,6 +56,3 @@ public class TrackingvalidatorTest {
 	//testcase3(); // valid productid,trackingid and invalid productname
 }
 }
-
-
-
