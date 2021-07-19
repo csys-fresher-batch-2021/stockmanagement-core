@@ -1,24 +1,20 @@
-package com.venkat.model;
-		
+package com.saran.connectionUtil;
 
-		import java.sql.Connection;
-		import java.sql.DriverManager;
-		import java.sql.PreparedStatement;
-		import java.sql.ResultSet;
-		import java.sql.SQLException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-		import com.venkat.model.DBException;
-
-		public class ConnectionUtil {
-
+public class ConnectionUtil {
 			/**
 			 * This method is used to get the database connection
 			 * @return
 			 * @throws Exception
 			 */
-			public static Connection getConnection() throws DBException {
+			public static Connection getConnection() throws Exception {
 				String driverClassName = "oracle.jdbc.driver.OracleDriver";		
-				String url = "jdbc:oracle:thin:@localhost:1521:XE";		
+				String url = "jdbc:oracle:thin:@192.168.0.20:1521:DBEBS12";		
 				String username = "apps";		
 				String password = "apps";
 				
@@ -31,18 +27,17 @@ package com.venkat.model;
 					connection = DriverManager.getConnection(url, username,password);
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
-					throw new DBException(e,"Unable to load the db driver class");
+					throw new Exception("Unable to load the db driver class");
 				} catch (SQLException e) {
 					e.printStackTrace();
-					throw new DBException(e,"Unable to connect database");
+					throw new Exception("Unable to connect database");
 				}
 				
 				System.out.println(connection);		
 
 				return connection;
 			}
-			
-			
+
 			public static void close(PreparedStatement pst, Connection connection) {
 				try {
 					if(pst !=null) {
@@ -70,7 +65,9 @@ package com.venkat.model;
 				} catch (SQLException e) {
 					//suppress exception
 				}
+				
 			}
 		
 
-	}
+}
+
