@@ -1,14 +1,13 @@
 package com.saran.validator;
 
 import java.time.LocalDate;
-
-import com.saran.model.Export;
+import com.saran.model.Export_Details;
 
 public class ExportValidatorTest {
 	
 	public static void testcase1() {
 		LocalDate Exportdate1 = LocalDate.parse("2021-06-12");
-	    Export export= new Export(12346, 1267, Exportdate1, "Pondicherry", 34890);
+	    Export_Details export= new Export_Details(12346, 1267, Exportdate1, "Pondicherry", 34890);
 	
 	try {
 		ExportValidator.validator(export);
@@ -23,7 +22,7 @@ public class ExportValidatorTest {
 	public static void testcase2() {
 		
 		LocalDate Exportdate2 = LocalDate.parse("2021-06-07");	
-	    Export export = new Export(0, 0, Exportdate2, "Chennai", 15870);
+	    Export_Details export = new Export_Details(0, 0, Exportdate2, "Chennai", 15870);
 		
 	try {
 		ExportValidator.validator(export);
@@ -36,7 +35,7 @@ public class ExportValidatorTest {
 	}
 	public static void testcase3() {
 		LocalDate Exportdate3 = LocalDate.parse("2021-06-07");	
-	    Export export = new Export(12348, 3648 , Exportdate3 , "", 15090);
+	    Export_Details export = new Export_Details(12348, 3648 , Exportdate3 , "", 15090);
 	    try {
 			ExportValidator.validator(export);
 			System.out.println("Validation Success");
