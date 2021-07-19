@@ -5,15 +5,16 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import com.saran.connectionUtil.ConnectionUtil;
-import com.saran.model.Export;
+import com.saran.model.Export_Details;
+
 
 public class ExportDaompl implements ExportDao {
 	
 	@Override
-	public boolean save(Export export) throws Exception {
+	public boolean save(Export_Details export_Details) throws Exception {
 		// TODO Auto-generated method stub
-		String sql = "insert into Export(productid,exportid,Exportdate,exportDestination,exportcost) values(" + export.productid + "," + export.exportid + ",'"
-				+ export.Exportdate + "','" + export.exportDestination + "'," + export.exportcost +");";
+		String sql = "insert into Export_Details(product_id,export_id,Export_date,export_Destination,export_cost) values(" + export_Details.product_id + "," + export_Details.export_id + ",'"
+				+ export_Details.Export_date + "','" + export_Details.export_Destination + "'," + export_Details.export_cost +");";
 				System.out.println(sql);
 				Connection connection = null;
 				PreparedStatement pst = null;
