@@ -1,8 +1,10 @@
 package com.saran.model;
 
+import java.util.List;
+
 import in.yourproject.stock.stockdetail;
 
 public interface stockdetailDao {
 
-	stockdetail findOne(int productId) throws Exception;
+	List<stockdetail> findOne(int productId) throws Exception;
 }

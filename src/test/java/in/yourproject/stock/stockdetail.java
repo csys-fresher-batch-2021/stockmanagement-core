@@ -1,15 +1,16 @@
 package in.yourproject.stock;
+import java.sql.Date;
 import java.time.LocalDate;
 public class stockdetail {
 
 	public int ProductId;
 	public String ProductName;
-	public LocalDate OrderedDate;
+	public Date OrderedDate;
 public int ProductQuantity;
 public stockdetail(){
-	System.out.println("Deafault Constructor");
+	
 }
-public stockdetail(int productId, String productName, LocalDate orderedDate, int productQuantity) {
+public stockdetail(int productId, String productName, Date orderedDate, int productQuantity) {
 	super();
 	ProductId = productId;
 	ProductName = productName;
@@ -20,6 +21,30 @@ public stockdetail(int productId, String productName, LocalDate orderedDate, int
 public String toString() {
 	return "stockdetail [ProductId=" + ProductId + ", ProductName=" + ProductName + ", OrderedDate=" + OrderedDate
 			+ ", ProductQuantity=" + ProductQuantity + "]";
+}
+public int getProductId() {
+	return ProductId;
+}
+public void setProductId(int productId) {
+	ProductId = productId;
+}
+public String getProductName() {
+	return ProductName;
+}
+public void setProductName(String productName) {
+	ProductName = productName;
+}
+public Date getOrderedDate() {
+	return OrderedDate;
+}
+public void setOrderedDate(Date orderDate) {
+	OrderedDate = orderDate;
+}
+public int getProductQuantity() {
+	return ProductQuantity;
+}
+public void setProductQuantity(int productQuantity) {
+	ProductQuantity = productQuantity;
 } 
 
 }
